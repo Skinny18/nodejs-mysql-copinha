@@ -1,0 +1,84 @@
+<div class="container">
+    <h1>Jogadores Bons</h1>
+    
+    {{#each good}}
+
+                    <input type="hidden" value={{this.id}} />
+                    <h2>1#{{this.goodplayer1}}</h2>
+                    <h2>2#{{this.goodplayer2}}</h2>
+                    <h2>3#{{this.goodplayer3}}</h2>
+                    <h2>4#{{this.goodplayer4}}</h2>
+                    <h2>5#{{this.goodplayer5}}</h2>
+                    <h2>6#{{this.goodplayer6}}</h2>
+                    <h2>7#{{this.goodplayer7}}</h2>
+                    <h2>8#{{this.goodplayer8}}</h2>
+                    <div class="actions">
+                        <a href="/players/updategoodplayer/{{this.id}}" ><i class="bi bi-pencil-square"></i></a>
+
+                        <form action="/players/removegoodplayer" method="POST" >
+                            <input type="hidden" name="id" value={{this.id}} />
+                            <button class="delete" type="submit">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                    </form>
+                    </div>
+                    
+
+
+
+    {{/each}}
+</div>  
+
+<div class="container">
+    <h1>Jogadores Médios</h1>
+                {{#each medium}} 
+                    <input type="hidden" name="id" value="{{this.id}}"/>
+                    <h2>1#{{this.mediumplayer1}}</h2>
+                    <h2>2#{{this.mediumplayer2}}</h2>
+                    <h2>3#{{this.mediumplayer3}}</h2>
+                    <h2>4#{{this.mediumplayer4}}</h2>
+                    <h2>5#{{this.mediumplayer5}}</h2>
+                    <h2>6#{{this.mediumplayer6}}</h2>
+                    <h2>7#{{this.mediumplayer7}}</h2>
+                    <h2>8#{{this.mediumplayer8}}</h2>
+                <div class="actions">
+                    <a href="/players/updatemediumplayer/{{this.id}}"><i class="bi bi-pencil-square"></i></a>
+                        <form action="/players/removemediumplayers" method="POST">
+                         <input type="hidden" name="id" value="{{this.id}}"/>
+                             <button class="delete" type="submit">
+                                 <i class="bi bi-x-lg"></i>
+                             </button>
+                        </form>
+                </div>
+    
+                    
+                {{/each}}
+</div>
+
+<div class="container">
+    <h1>Jogadores Ruins</h1>
+                    {{#each bad}} 
+                    <input type="hidden" name="id" value="{{this.id}}"/>
+                    <h2>1#{{this.badplayer1}}</h2>
+                    <h2>2#{{this.badplayer2}}</h2>
+                    <h2>3#{{this.badplayer3}}</h2>
+                    <h2>4#{{this.badplayer4}}</h2>
+                    <h2>5#{{this.badplayer5}}</h2>
+                    <h2>6#{{this.badplayer6}}</h2>
+                    <h2>7#{{this.badplayer7}}</h2>
+                    <h2>8#{{this.badplayer8}}</h2>
+                <div class="actions">
+                    <a href="/players/updatebadplayers/{{this.id}}"><i class="bi bi-pencil-square"></i></a>
+                        <form action="/players/removebadplayers" method="POST">
+                         <input type="hidden" name="id" value="{{this.id}}"/>
+                             <button class="delete" type="submit">
+                                 <i class="bi bi-x-lg"></i>
+                             </button>
+                        </form>
+                </div>
+    
+                    
+                {{/each}}
+
+
+</div>

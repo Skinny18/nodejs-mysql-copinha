@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Editando Jogadores Medios</h1>
+
+    <form action="/players/updatemediumplayer" method="POST">
+        <input type="hidden" name="id" value="{{mediumplayers.id}}" />
+        <div class="form-control">
+                <input type="text" name="mediumplayer1" value="{{mediumplayers.mediumplayer1}}" />
+                <input type="text" name="mediumplayer2" value="{{mediumplayers.mediumplayer2}}" />
+                <input type="text" name="mediumplayer3" value="{{mediumplayers.mediumplayer3}}" />
+                <input type="text" name="mediumplayer4"  value="{{mediumplayers.mediumplayer4}}" />
+                <input type="text" name="mediumplayer5"  value="{{mediumplayers.mediumplayer5}}" />
+                <input type="text" name="mediumplayer6" value="{{mediumplayers.mediumplayer6}}" />
+                <input type="text" name="mediumplayer7"  value="{{mediumplayers.mediumplayer7}}"/>
+                <input type="text" name="mediumplayer8"  value="{{mediumplayers.mediumplayer8}}"/>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Cadastrar" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Editando Jogadores Bons</h1>
+
+    <form action="/players/updategoodplayer" method="POST">
+        <input type="hidden" name="id" value="{{goodplayers.id}}" />
+        <div class="form-control">
+                <input type="text" name="goodplayer1" value="{{goodplayers.goodplayer1}}" />
+                <input type="text" name="goodplayer2" value="{{goodplayers.goodplayer2}}" />
+                <input type="text" name="goodplayer3" value="{{goodplayers.goodplayer3}}" />
+                <input type="text" name="goodplayer4"  value="{{goodplayers.goodplayer4}}" />
+                <input type="text" name="goodplayer5"  value="{{goodplayers.goodplayer5}}" />
+                <input type="text" name="goodplayer6" value="{{goodplayers.goodplayer6}}" />
+                <input type="text" name="goodplayer7"  value="{{goodplayers.goodplayer7}}"/>
+                <input type="text" name="goodplayer8"  value="{{goodplayers.goodplayer8}}"/>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Cadastrar" />
+        </div>
+    </form>
+</div>

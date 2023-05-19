@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Editando Jogadores Ruins</h1>
+
+    <form action="/players/updatebadplayers" method="POST">
+        <input type="hidden" name="id" value="{{badplayers.id}}" />
+        <div class="form-control">
+                <input type="text" name="badplayer1" value="{{badplayers.badplayer1}}" />
+                <input type="text" name="badplayer2" value="{{badplayers.badplayer2}}" />
+                <input type="text" name="badplayer3" value="{{badplayers.badplayer3}}" />
+                <input type="text" name="badplayer4"  value="{{badplayers.badplayer4}}" />
+                <input type="text" name="badplayer5"  value="{{badplayers.badplayer5}}" />
+                <input type="text" name="badplayer6" value="{{badplayers.badplayer6}}" />
+                <input type="text" name="badplayer7"  value="{{badplayers.badplayer7}}"/>
+                <input type="text" name="badplayer8"  value="{{badplayers.badplayer8}}"/>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Cadastrar" />
+        </div>
+    </form>
+</div>
